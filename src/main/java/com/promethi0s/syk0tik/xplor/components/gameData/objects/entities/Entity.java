@@ -22,7 +22,6 @@ public class Entity extends MapObject {
     public Entity(int x, int y, int width, int height, boolean isCollidable, boolean isAttackable) {
 
         this.loc = new Coordinates(x, y);
-        this.bounds = new Bounds(x, y, width, height);
         this.width = width;
         this.height = height;
         this.isCollidable = isCollidable;

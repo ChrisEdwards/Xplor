@@ -21,6 +21,8 @@ public class Sprite {
 
     public int[] pixels;
     public int scale;
+    // 254 R 254 G 254 B
+    public int transparentColor = -65794;
 
     // Initializes a sprite with coordinates and home sheet (coordinates are not pixel-precision)
     public Sprite(int xLoc, int yLoc, SpriteSheet sheet) {

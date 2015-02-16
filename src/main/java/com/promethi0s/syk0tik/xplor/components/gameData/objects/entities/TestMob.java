@@ -1,6 +1,7 @@
 package com.promethi0s.syk0tik.xplor.components.gameData.objects.entities;
 
 import com.promethi0s.syk0tik.xplor.components.gameData.maps.Entities;
+import com.promethi0s.syk0tik.xplor.components.gameData.objects.Bounds;
 import com.promethi0s.syk0tik.xplor.components.graphics.Sprite;
 
 import java.util.Random;
@@ -24,6 +25,8 @@ public class TestMob extends Mob {
         sprites[1] = Sprite.testMobRight;
         sprites[2] = Sprite.testMobDown;
         sprites[3] = Sprite.testMobLeft;
+
+        this.bounds = new Bounds(x, y, sprites, faceDir);
 
     }
 

@@ -66,13 +66,15 @@ public class Entities extends Map {
 
     public void set(Entity entity, Coordinates loc) {
 
-        objects.set(loc.x + loc.y * width, entity);
+        if (loc.x + loc.y * width >= 0 && loc.x + loc.y * width < objects.size())
+            objects.set(loc.x + loc.y * width, entity);
 
     }
 
     public void clear(Coordinates loc) {
 
-        objects.set(loc.x + loc.y * width, MapObject.empty);
+        if (loc.x + loc.y * width >= 0 && loc.x + loc.y * width < objects.size())
+            objects.set(loc.x + loc.y * width, MapObject.empty);
 
     }
 
